@@ -12,6 +12,9 @@ class ThirdPage extends StatefulWidget {
 class _ThirdPageState extends State<ThirdPage> {
   @override 
   Widget build(BuildContext context) {
+    return Scaffold(
+      body: Center(child: ,)
+    )
     
   }
 }
