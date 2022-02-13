@@ -1,3 +1,5 @@
+import 'package:befit/widgets/lower_container.dart';
+import 'package:befit/widgets/upper_container.dart';
 import 'package:flutter/material.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -12,7 +14,20 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(),
+        child: Column(
+          children: const [
+            UpperContainer(imageName: 'fitness.png'),
+            LowerContainer(
+              firstTextList: [
+                'Welcome!',
+                'Explore the all new way to build',
+                'your fitness & find the',
+                'perfect fit for you.',
+                'Next'
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
