@@ -6,12 +6,16 @@ class LowerContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-            height: MediaQuery.of(context).size.height * 0.6,
+            padding: const EdgeInsets.only(top: 32, left: 32, right: 32),
+            transform: Matrix4.translationValues(0.0, -30.0, 0.0),
+            width: MediaQuery.of(context).size.width,
+            height: MediaQuery.of(context).size.height * 0.4,
             decoration: const BoxDecoration(
-              color: Colors.blue,
-              image: DecorationImage(
-                image: AssetImage('images/fitness.png'),
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(20),
+                topRight: Radius.circular(20),
               ),
+              color: Colors.white,
             ),
           );
   }
