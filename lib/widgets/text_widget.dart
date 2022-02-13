@@ -1,35 +1,37 @@
 import 'package:flutter/material.dart';
 
 class TextWidget extends StatelessWidget {
-  const TextWidget({Key? key}) : super(key: key);
+  const TextWidget({Key? key, required this.textList}) : super(key: key);
+
+  final List textList;
 
   @override
   Widget build(BuildContext context) {
     return Column(children: [
-      const Padding(
+      Padding(
         padding: EdgeInsets.only(bottom: 16.0),
         child: Text(
-          'Welcome!',
+          textList[0],
           style: TextStyle(
             fontSize: 46,
             fontWeight: FontWeight.bold,
           ),
         ),
       ),
-      const Text(
-        'Explore the all new way to build',
+      Text(
+        textList[1],
         style: TextStyle(
             color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w600),
         textAlign: TextAlign.center,
       ),
-      const Text(
-        'your fitness & find the',
+      Text(
+        textList[2],
         style: TextStyle(
             color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w700),
         textAlign: TextAlign.center,
       ),
-      const Text(
-        'perfect fit for you!',
+      Text(
+        textList[3],
         style: TextStyle(
             color: Colors.grey, fontSize: 20, fontWeight: FontWeight.w700),
         textAlign: TextAlign.center,
