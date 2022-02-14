@@ -25,6 +25,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 'perfect fit for you.',
                 'Next'
               ],
+              screenName: "/secondPage",
             )
           ],
         ),

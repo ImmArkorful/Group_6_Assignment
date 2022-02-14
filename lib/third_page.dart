@@ -25,6 +25,7 @@ class _ThirdPageState extends State<ThirdPage> {
               'performance',
               'Next'
             ],
+            screenName: "/firstPage",
           )
         ],
       ),

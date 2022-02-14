@@ -4,10 +4,12 @@ import 'package:befit/widgets/text_widget.dart';
 import 'package:flutter/material.dart';
 
 class LowerContainer extends StatelessWidget {
-  const LowerContainer({Key? key, required this.firstTextList})
+  const LowerContainer(
+      {Key? key, required this.firstTextList, required this.screenName})
       : super(key: key);
 
   final List firstTextList;
+  final String screenName;
 
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class LowerContainer extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          const Button()
+          Button()
         ],
       ),
     );
