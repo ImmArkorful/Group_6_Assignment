@@ -10,11 +10,24 @@ class ThirdPage extends StatefulWidget {
 }
 
 class _ThirdPageState extends State<ThirdPage> {
-  @override 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: ,)
-    )
-    
+        body: Center(
+      child: Column(
+        children: const [
+          UpperContainer(imageName: 'fitness3.png'),
+          LowerContainer(
+            firstTextList: [
+              "Let's go...",
+              'Get the new fitness updates',
+              'everyday & improve',
+              'performance',
+              'Next'
+            ],
+          )
+        ],
+      ),
+    ));
   }
 }
