@@ -1,3 +1,4 @@
+import 'package:befit/second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:befit/home_page.dart';
 
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
         initialRoute: '/',
         routes: {
           '/': (context) => const MyHomePage(),
+          '/secondPage': (context) => const SecondPage(),
         });
   }
 }
