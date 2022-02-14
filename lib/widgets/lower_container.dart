@@ -38,7 +38,7 @@ class LowerContainer extends StatelessWidget {
           const SizedBox(
             height: 40,
           ),
-          Button(screen: screenName)
+          Button(screen: screenName, )
         ],
       ),
     );
