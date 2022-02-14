@@ -28,6 +28,7 @@ class _SecondPageState extends State<SecondPage> {
                 'according to your comfort.',
                 'Next'
               ],
+              screenName: "/thirdPage",
             )
           ],
         ),
