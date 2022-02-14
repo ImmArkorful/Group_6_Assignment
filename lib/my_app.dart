@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'Befit',
         home: MyHomePage(),
-        initialRoute: '/',
+        initialRoute: '/home',
         routes: {
-          '/': (context) => const MyHomePage(),
+          '/home': (context) => const MyHomePage(),
           '/secondPage': (context) => const SecondPage(),
-          '/thirdPage': (context) => const ThirdPage(),
+          '/thirdPage': (context) => const ThirdPage()
         });
   }
 }
