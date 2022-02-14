@@ -29,6 +29,7 @@ class _ThirdPageState extends State<ThirdPage> {
               'Next'
             ],
             screenName: "/firstPage",
+            myWidth: [10.0, 10.0, 24.0],
           )
         ],
       ),
