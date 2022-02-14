@@ -16,7 +16,10 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         child: Column(
           children: const [
-            UpperContainer(imageName: 'fitness.png'),
+            UpperContainer(
+              imageName: 'fitness.png',
+              color: Colors.blue,
+            ),
             LowerContainer(
               firstTextList: [
                 'Welcome!',

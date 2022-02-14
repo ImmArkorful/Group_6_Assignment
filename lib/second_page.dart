@@ -16,7 +16,10 @@ class _SecondPageState extends State<SecondPage> {
       body: Center(
         child: Column(
           children: const [
-            UpperContainer(imageName: 'fitness1.png'),
+            UpperContainer(
+              imageName: 'fitness1.png',
+              color: Colors.red,
+            ),
             LowerContainer(
               firstTextList: [
                 'Customize',

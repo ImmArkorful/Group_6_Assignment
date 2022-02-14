@@ -8,13 +8,13 @@ class Button extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
+        const Text(
           'Skip',
           style: TextStyle(color: Colors.grey),
         ),
         ElevatedButton(
           onPressed: () {},
-          child: Text('Next'),
+          child: const Text('Next'),
           style: ElevatedButton.styleFrom(
               elevation: 0,
               padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 14),
