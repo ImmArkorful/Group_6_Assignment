@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 
 class LowerContainer extends StatelessWidget {
   const LowerContainer(
-      {Key? key, required this.firstTextList, required this.screenName})
+      {Key? key, required this.firstTextList, required this.screenName, required this.myWidth})
       : super(key: key);
 
   final List firstTextList;
+  final List myWidth;
   final String screenName;
 
   @override
@@ -31,9 +32,9 @@ class LowerContainer extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const ProgressBar(
-            widthList: [24.0, 10.0, 10.0],
-            colors: [Colors.red, Colors.green, Colors.grey],
+           ProgressBar(
+            widthList: myWidth,
+            colors: const [Colors.red, Colors.green, Colors.grey],
           ),
           const SizedBox(
             height: 40,

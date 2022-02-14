@@ -29,6 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 'Next'
               ],
               screenName: "/secondPage",
+              myWidth: [24.0, 10.0, 10.0],
             )
           ],
         ),
