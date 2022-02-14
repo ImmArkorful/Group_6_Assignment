@@ -16,7 +16,7 @@ class Button extends StatelessWidget {
         ),
         ElevatedButton(
           onPressed: () {
-            
+            Navigator.pushNamed(context, screen);
           },
           child: const Text('Next'),
           style: ElevatedButton.styleFrom(
