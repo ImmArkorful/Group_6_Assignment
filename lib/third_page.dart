@@ -16,7 +16,10 @@ class _ThirdPageState extends State<ThirdPage> {
         body: Center(
       child: Column(
         children: const [
-          UpperContainer(imageName: 'fitness3.png'),
+          UpperContainer(
+            imageName: 'fitness3.png',
+            color: Colors.yellow,
+          ),
           LowerContainer(
             firstTextList: [
               "Let's go...",
